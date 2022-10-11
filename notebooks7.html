@@ -494,7 +494,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-2f140db6-9eb7-445b-9530-007919296564">
+  <div id="df-22ec3558-1634-4b60-96e6-5fc8321e4460">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -595,7 +595,7 @@ title="Print to PDF"
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-2f140db6-9eb7-445b-9530-007919296564')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-22ec3558-1634-4b60-96e6-5fc8321e4460')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -646,12 +646,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-2f140db6-9eb7-445b-9530-007919296564 button.colab-df-convert');
+          document.querySelector('#df-22ec3558-1634-4b60-96e6-5fc8321e4460 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-2f140db6-9eb7-445b-9530-007919296564');
+          const element = document.querySelector('#df-22ec3558-1634-4b60-96e6-5fc8321e4460');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -733,7 +733,7 @@ title="Print to PDF"
 </section>
 <section id="k-nearest-neighbor-knn">
 <h2>K-Nearest Neighbor (KNN)<a class="headerlink" href="#k-nearest-neighbor-knn" title="Permalink to this headline">#</a></h2>
-<p>Membuat klasifikasi KNN</p>
+<p>Membuat klasifikasi KNN dengan K=3</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">KNeighborsClassifier</span>
@@ -750,16 +750,16 @@ title="Print to PDF"
 </div>
 </div>
 </div>
-<p>Menhitung akurasi dari model KNN</p>
+<p>Mengitung akurasi dari model KNN</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Score data testing :&quot;</span><span class="p">,</span> <span class="n">knn</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X_train_scaled</span><span class="p">,</span> <span class="n">y_train</span><span class="p">))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Score data latih  :&quot;</span><span class="p">,</span> <span class="n">knn</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X_train_scaled</span><span class="p">,</span> <span class="n">y_train</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Score data uji     :&quot;</span><span class="p">,</span> <span class="n">knn</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X_test_scaled</span><span class="p">,</span> <span class="n">y_test</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Score data testing : 0.8586956521739131
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Score data latih  : 0.8586956521739131
 Score data uji     : 0.7083333333333334
 </pre></div>
 </div>
@@ -803,7 +803,7 @@ Score data uji     : 0.7083333333333334
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Score data latih : 1.0
-Score data uji   : 0.75
+Score data uji   : 0.7083333333333334
 </pre></div>
 </div>
 </div>
